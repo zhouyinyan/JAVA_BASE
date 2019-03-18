@@ -72,15 +72,16 @@ java中对象初始化和清理相关知识点
 5. 创建enum时，编译器自动添加toString()-名字、ordinal()-声明顺序、values()-声明的常量构成的数组。
 
 
-
 ## chapter6 访问权限控制
 
 java中的包、public protect private 权限修饰符知识
 
 目标：编写一组示例用以说明包、public protect private 权限修饰符
+代码：com.zhouyinyan.demo.accesscontrol
 
-注意点：xxx
-
+注意点：
+1. 每个编译单元（每个文件）只能有一个public类，多个编译器会给出错误信息。
+2. 尽可能将字段定义为private的，用于封装内部数据目的，让客户端通过public开放的接口依赖，而不是直接依赖字段，提高内部字段变更的灵活性
 
 
 ## chapter7 复用类
